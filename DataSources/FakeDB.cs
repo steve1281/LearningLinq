@@ -20,8 +20,8 @@ namespace LearningLinq.DataSources
 
         private Context()
         {
-            //Init(); // set up database 
-            LoadDatabase(); // load database into core memory.
+            Init(); // set up database 
+            //LoadDatabase(); // load database into core memory.
         }
 
         // singleton
@@ -70,12 +70,13 @@ namespace LearningLinq.DataSources
             Departments.Add(new Department { ID = 2, Name = "HR", Location = "London" });
             Departments.Add(new Department { ID = 3, Name = "Payroll", Location = "Sydney" });
 
-            SaveChanges(); // overwrite database
+            //SaveChanges(); // overwrite database
         }
 
         
         public void SaveChanges()
         {
+            throw new System.Exception("NotImplemented");
             Serializer serzer = new Serializer();
             serzer.SerializeObject<List<Employee>>(Employees, DB_FOLDER + "employees.xml");
             serzer.SerializeObject<List<Department>>(Departments, DB_FOLDER + "departments.xml");
@@ -83,6 +84,7 @@ namespace LearningLinq.DataSources
         }
         public void LoadDatabase()
         {
+            throw new System.Exception("NotImplemented");
             Serializer serzer = new Serializer();
             Employees = serzer.DeSerializeObject<List<Employee>>(DB_FOLDER +  "employees.xml");
             Departments = serzer.DeSerializeObject<List<Department>>(DB_FOLDER + "departments.xml");

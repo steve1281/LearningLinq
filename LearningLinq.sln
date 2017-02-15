@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template", "Lesson18\Templa
 		{D7967492-8E65-4880-8003-C45113E62B45} = {D7967492-8E65-4880-8003-C45113E62B45}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExtentions", "CustomExtentions\CustomExtentions.csproj", "{D7967492-8E65-4880-8003-C45113E62B45}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExtensions", "CustomExtentions\CustomExtensions.csproj", "{D7967492-8E65-4880-8003-C45113E62B45}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSources", "DataSources\DataSources.csproj", "{5B79E563-3EB7-4F9A-801E-DE94D591D8FD}"
 	ProjectSection(ProjectDependencies) = postProject
