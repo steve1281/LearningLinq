@@ -50,8 +50,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomExtentions\CustomExtensions.csproj">
-      <Project>{d7967492-8e65-4880-8003-c45113e62b45}</Project>
+    <ProjectReference Include="..\CustomExtensions\CustomExtensions.csproj">
+      <Project>{f6c644a7-2acb-4d8a-86d4-ae934d180a4c}</Project>
       <Name>CustomExtensions</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataSources\DataSources.csproj">

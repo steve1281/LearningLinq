@@ -11,7 +11,7 @@ namespace LearningLinq.Testing
     {
         public static void Main()
         {
-            Console.WriteLine("lesson 18".ChangeFirstLetterCase());
+            Console.WriteLine("lesson 18\n".ChangeFirstLetterCase());
             ExampleClass testing = new ExampleClass();
             testing.Example();
             Console.WriteLine("\nPress any key...");
@@ -27,7 +27,6 @@ namespace LearningLinq.Testing
         {
             Context db = Context.Instance;
             
-            db.SaveChanges();
             var overpaid = db.Employees.Where(s => s.AnnualSalary > 1000);
             foreach (Employee employee in overpaid)
             {

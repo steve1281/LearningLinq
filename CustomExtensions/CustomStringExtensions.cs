@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CustomExtensions
+namespace LearningLinq.CustomExtensions
 {
     // Extensions holder
     public static class CustomExtensions

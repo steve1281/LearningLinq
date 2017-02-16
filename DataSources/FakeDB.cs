@@ -11,7 +11,7 @@ namespace LearningLinq.DataSources
     // Fake DB context, customizable
     public class Context
     {
-        const string DB_FOLDER = @"C:\learning_linq_database\";
+        const string DB_FOLDER = @"C:\git projects\database\";
 
         public List<Employee> Employees = new List<Employee>();
         public List<Student> Students = new List<Student>();
