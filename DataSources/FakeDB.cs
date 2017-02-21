@@ -54,16 +54,16 @@ namespace LearningLinq.DataSources
             Students.Add(new Student { ID = 110, Name = "Linda", Gender = "Female", Subjects = new List<string> { "ADO.NET", "C#", "AJAX" }, TotalMarks = 900 });
             Students.Add(new Student { ID = 111, Name = "Glenda", Gender = "Female", Subjects = new List<string> { "WCF", "SQL Server", "C#" }, TotalMarks = 700 });
 
-            Employees.Add(new Employee { EmployeeID = 101, FirstName = "Joe", LastName = "Smith", Gender = "Male", AnnualSalary = 30000, DepartmentID = 1 });
-            Employees.Add(new Employee { EmployeeID = 102, FirstName = "Mary", LastName = "Jane", Gender = "Female", AnnualSalary = 32000, DepartmentID = 2 });
-            Employees.Add(new Employee { EmployeeID = 103, FirstName = "Billy", LastName = "Franklin", Gender = "Male", AnnualSalary = 36000, DepartmentID = 2 });
-            Employees.Add(new Employee { EmployeeID = 104, FirstName = "Sue", LastName = "Ellen", Gender = "Female", AnnualSalary = 66000, DepartmentID = 1 });
-            Employees.Add(new Employee { EmployeeID = 105, FirstName = "Bob", LastName = "Wiliams", Gender = "Male", AnnualSalary = 55000, DepartmentID = 3 });
-            Employees.Add(new Employee { EmployeeID = 101, FirstName = "George", LastName = "Smith", Gender = "Male", AnnualSalary = 30000, DepartmentID = 1 });
-            Employees.Add(new Employee { EmployeeID = 102, FirstName = "Linda", LastName = "Jane", Gender = "Female", AnnualSalary = 32000, DepartmentID = 2 });
-            Employees.Add(new Employee { EmployeeID = 103, FirstName = "Glenda", LastName = "Franklin", Gender = "Male", AnnualSalary = 36000, DepartmentID = 2 });
-            Employees.Add(new Employee { EmployeeID = 104, FirstName = "Karen", LastName = "Ellen", Gender = "Female", AnnualSalary = 66000, DepartmentID = 1 });
-            Employees.Add(new Employee { EmployeeID = 105, FirstName = "Frank", LastName = "Wiliams", Gender = "Male", AnnualSalary = 55000, DepartmentID = 3 });
+            Employees.Add(new Employee { JobTitle = "Sr Developer", EmployeeID = 101, FirstName = "Joe", LastName = "Smith", Gender = "Male", AnnualSalary = 30000, DepartmentID = 1 });
+            Employees.Add(new Employee { JobTitle = "Jr Developer", EmployeeID = 102, FirstName = "Mary", LastName = "Jane", Gender = "Female", AnnualSalary = 32000, DepartmentID = 2 });
+            Employees.Add(new Employee { JobTitle = "Developer", EmployeeID = 103, FirstName = "Billy", LastName = "Franklin", Gender = "Male", AnnualSalary = 36000, DepartmentID = 2 });
+            Employees.Add(new Employee { JobTitle = "Developer", EmployeeID = 104, FirstName = "Sue", LastName = "Ellen", Gender = "Female", AnnualSalary = 66000, DepartmentID = 1 });
+            Employees.Add(new Employee { JobTitle = "Sr Developer", EmployeeID = 105, FirstName = "Bob", LastName = "Wiliams", Gender = "Male", AnnualSalary = 55000, DepartmentID = 3 });
+            Employees.Add(new Employee { JobTitle = "Sr Developer", EmployeeID = 101, FirstName = "George", LastName = "Smith", Gender = "Male", AnnualSalary = 30000, DepartmentID = 1 });
+            Employees.Add(new Employee { JobTitle = "Jr Developer", EmployeeID = 102, FirstName = "Linda", LastName = "Jane", Gender = "Female", AnnualSalary = 32000, DepartmentID = 2 });
+            Employees.Add(new Employee { JobTitle = "Developer", EmployeeID = 103, FirstName = "Glenda", LastName = "Franklin", Gender = "Male", AnnualSalary = 36000, DepartmentID = 2 });
+            Employees.Add(new Employee { JobTitle = "Developer", EmployeeID = 104, FirstName = "Karen", LastName = "Ellen", Gender = "Female", AnnualSalary = 66000, DepartmentID = 1 });
+            Employees.Add(new Employee { JobTitle = "Sr Developer", EmployeeID = 105, FirstName = "Frank", LastName = "Wiliams", Gender = "Male", AnnualSalary = 55000, DepartmentID = 3 });
 
 
             Departments.Add(new Department { ID = 1, Name = "IT", Location = "New York" });
@@ -103,6 +103,7 @@ namespace LearningLinq.DataSources
         public string Gender { get; set; }
         public int AnnualSalary { get; set; }
         public int DepartmentID { get; set; }
+        public string JobTitle { get; set; }
     }
     public class Student
     {
